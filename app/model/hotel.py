@@ -53,8 +53,42 @@ class Room:
     def _init_availability(self): pass
     def book(self, reservation_id, check_in, check_out): pass
 
-
-
-
 # TODO: Implement Hotel class here
+class Hotel:
+    def __init__(self):
+        self.rooms: dict[int, Room] = {}
+        self.reservations: dict[str, Reservation] = {}
+
+    def add_room(self, number, type_, price_per_night):
+        pass
+
+    def make_reservation(self, *args) -> str:
+        pass
+
+
+    def cancel_reservation(self, reservation_id):
+        pass
+
+
+    def update_reservation(self, *args):
+        pass
+
+
+    def add_guest(self, reservation_id, name, email, type_):
+        pass
+
+    def delete_guest(self, reservation_id, guest_index):
+        pass
+
+    def list_guests(self, reservation_id) -> list:
+        pass
+
+    def find_available_rooms(self, check_in, check_out) -> list:
+        pass
+
+    def find_reservations(self, start, end) -> dict:
+        pass
+
+
+
 
