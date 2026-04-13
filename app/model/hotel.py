@@ -2,20 +2,6 @@ from dataclasses import dataclass, field
 from datetime import datetime, date, timedelta
 from typing import ClassVar
 
-from app.services.util import (generate_unique_id, date_lower_than_today_error,
-                               reservation_not_found_error, guest_not_found_error, room_not_available_error,
-                               room_not_found_error, room_already_exists_error)
-
-
-from dataclasses import dataclass, field
-from datetime import datetime, date, timedelta
-from typing import ClassVar
-
-from app.services.util import (generate_unique_id, date_lower_than_today_error,
-                               reservation_not_found_error, guest_not_found_error, room_not_available_error,
-                               room_not_found_error, room_already_exists_error)
-
-
 # TODO: Implement Guest class here
 @dataclass
 class Guest:
@@ -55,8 +41,6 @@ class Reservation:
 
 # TODO: Implement Room class here
 class Room:
-
-class Room :
 
     def __init__(self, number :  int, type_ : str, price_per_night : float):
         self.number = number
