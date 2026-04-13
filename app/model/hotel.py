@@ -45,6 +45,7 @@ class Reservation:
         pass
 
 # TODO: Implement Room class here
+class Room:
 
 
 # TODO: Implement Hotel class here
